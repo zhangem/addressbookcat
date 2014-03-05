@@ -121,7 +121,7 @@ $(document).ready(function() {
       newPhoneNumber = newContact.createPhoneNumber(inputtedAreaCode, inputtedFirstThree, inputtedLastFour);
     });
 
-    if (newContact.numbers[0].valid()) {
+    //if (newContact.numbers[0].valid()) {
 
       $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
@@ -143,11 +143,11 @@ $(document).ready(function() {
         });
       });
     this.reset();
-  } else {
-    alert("Please enter a valid phone number!");
-    $(".new-area-code").val("");
-    $(".new-first-three").val("");
-    $(".new-last-four").val("");
-  }
+  //} else {
+   // alert("Please enter a valid phone number!");
+  //  $(".new-area-code").val("");
+  //  $(".new-first-three").val("");
+   // $(".new-last-four").val("");
+ // }
   });
 });
